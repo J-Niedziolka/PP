@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>widok</title>
+</head>
+<body>
+<span th:text="${obraz.id}"/>
+<span th:text="${obraz.author}"/>
+<span th:text="${obraz.getTitle()}"/><br>
+<span th:text="${obraz.ifExposition}"/>
+<span th:text="${obraz.ifRenovation}"/><br>
+<span th:text="${obraz.getDate()}"/><br>
+<a th:href = "@{/}">Powrót</a>
+</body>
+</html>
