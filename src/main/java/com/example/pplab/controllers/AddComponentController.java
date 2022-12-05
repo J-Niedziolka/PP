@@ -26,5 +26,5 @@ public class AddComponentController {
         return mav;
     }
 
-    //1.Zaimplementuj kolejny kontroler (lub metodę w istniejącym), który umieszcza w modelu listę komponentów JB.
+    //1.    Zaimplementuj kolejny kontroler (lub metodę w istniejącym), który umieszcza w modelu listę komponentów JB.
 }

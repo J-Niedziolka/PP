@@ -6,12 +6,20 @@
     <title>widok</title>
 </head>
 <body>
-<span th:text="${obraz.id}"/>
-<span th:text="${obraz.author}"/>
-<span th:text="${obraz.getTitle()}"/><br>
-<span th:text="${obraz.ifExposition}"/>
-<span th:text="${obraz.ifRenovation}"/><br>
-<span th:text="${obraz.getDate()}"/><br>
+<div th:object="${obraz}">
+    <span th:text="*{id}"/>
+    <span th:text="*{author}"/>
+    <span th:text="*{title}"/><br>
+    <span th:text="*{ifExposition}"/>
+    <span th:text="*{ifRenovation}"/><br>
+    <span th:text="*{date}"/><br>
+</div>
+<!--<span th:text="${obraz.id}"/>-->
+<!--<span th:text="${obraz.author}"/>-->
+<!--<span th:text="${obraz.getTitle()}"/><br>-->
+<!--<span th:text="${obraz.ifExposition}"/>-->
+<!--<span th:text="${obraz.ifRenovation}"/><br>-->
+<!--<span th:text="${obraz.getDate()}"/><br>-->
 <a th:href = "@{/}">Powrót</a>
 </body>
 </html>

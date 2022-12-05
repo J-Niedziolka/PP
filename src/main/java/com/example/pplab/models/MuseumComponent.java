@@ -1,7 +1,10 @@
 package com.example.pplab.models;
 
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDate;
 
+@Component
 public class MuseumComponent {
     /*
     14.	Wirtualne muzeum (kolekcje obrazów, historia, informacje o autorach, możliwość umówienia wizyty grupowej z przewodnikiem, itp),
