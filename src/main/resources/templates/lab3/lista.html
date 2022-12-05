@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista</title>
+</head>
+<body>
+    <a th:href = "@{/}">Powrót na stronę główną</a>
+
+    <h1>Lista beanów:</h1>
+
+    <span th:if="${#lists.isEmpty(lista)}"><h2>Brak elementów na liście</h2></span>
+
+    <span th:unless="${#lists.isEmpty(lista)}">
+        <div th:each="bean : ${lista}">
+            <span th:text="${bean}"></span>
+        </div>
+    </span>
+</body>
+</html>
